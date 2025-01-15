@@ -27,6 +27,10 @@ public class Review extends BaseModel {
 
     private Double rating;
 
+//    @OneToOne(orphanRemoval = true)
+//
+//    private Booking booking;
+
     @Override
     public String toString(){
         return "Review "+this.content+"this.rating"+" "+this.createdAt;
