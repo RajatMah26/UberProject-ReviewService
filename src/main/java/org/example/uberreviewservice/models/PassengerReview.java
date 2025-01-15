@@ -10,10 +10,14 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-@PrimaryKeyJoinColumn(name="passenger_review_id")
+//@PrimaryKeyJoinColumn(name="passenger_review_id")
+
 public class PassengerReview extends Review{
 
-
+    @Column(nullable = false)
     private String passengerReviewcontent;
+
+    @Column(nullable = false)
+    private  String passengerRating;
 
 }

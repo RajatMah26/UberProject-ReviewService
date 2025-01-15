@@ -15,7 +15,7 @@ import java.util.Date;
 @Setter
 public abstract class BaseModel {
     @Id// this anntaiona make the id property a primary key of our table
-    @GeneratedValue(strategy = GenerationType.TABLE)//Identiny means auto incremeant
+    @GeneratedValue(strategy = GenerationType.IDENTITY)//Identiny means auto incremeant
     protected Long id;
 
     @Column(nullable = false)
