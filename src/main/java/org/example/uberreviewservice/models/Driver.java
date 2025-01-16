@@ -20,7 +20,7 @@ public class Driver extends BaseModel{
     private String licenseNumber;
 
     // one to many assosation
-    @OneToMany(mappedBy = "driver")
+    @OneToMany(mappedBy = "driver",fetch = FetchType.LAZY)
     private List<Booking> bookings=new ArrayList<>();
 
 

@@ -14,10 +14,9 @@ import java.util.List;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Passanger extends BaseModel{
+public class Passenger extends BaseModel{
     private String name;
 
-
-    @OneToMany(mappedBy = "passanger")
+    @OneToMany(mappedBy = "passenger")
     private List<Booking> bookings=new ArrayList<>();
 }
